@@ -56,5 +56,5 @@ print("Volume balok yaitu:",hitung.volumeBalok())
 print()
 
 print("BOLA")
-hasil = bola(20,10)
+hasil = bola("","")
 print("Volume bola yaitu:",hasil.volumeBola())
