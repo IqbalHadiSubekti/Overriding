@@ -33,6 +33,15 @@ class balok(bangunRuang):
 		self.volumeBalok = self.panjang*self.lebar*self.tinggi
 		return self.volumeBalok
 
+class bola(bangunRuang):
+	def __init__(self,nama,jarijari):
+		super().__init__()
+		self.jarijari = float(input("Masukkan jari-jari: "))
+
+	def volumeBola(self):
+		self.volumeBola = 4/3*pi*self.jarijari*self.jarijari*self.jarijari
+		return self.volumeBola
+
 print("TABUNG")
 nilai = tabung("","")
 print("Volume Tabung yaitu:",nilai.volumeTabung())
@@ -43,3 +52,9 @@ print()
 print("BALOK")
 hitung = balok("","","")
 print("Volume balok yaitu:",hitung.volumeBalok())
+
+print()
+
+print("BOLA")
+hasil = bola(20,10)
+print("Volume bola yaitu:",hasil.volumeBola())
